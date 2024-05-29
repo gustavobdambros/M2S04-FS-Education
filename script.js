@@ -22,3 +22,11 @@ const quadrados = numeros.map((n) => {
 
 console.log(quadrados);
 //-----------------------------------------------------------------------------------------
+// [M2S04] Ex 4 - Criando classe Produto
+class Produto {
+  constructor(nome, preco, quantidade) {
+    this.nome = nome;
+    this.preco = preco;
+    this.quantidade = quantidade;
+  }
+}
