@@ -7,3 +7,11 @@ const numerosSomados = numeros.reduce((somaAtual, numero) => {
 
 console.log(`A soma dos elementos do array é: ${numerosSomados}`);
 // -----------------------------------------------------------------------------------------
+//[M2S04] Ex 2 - Filtragem de Elementos
+
+const pares = numeros.filter((n) => {
+  return n % 2 === 0;
+});
+
+console.log(pares);
+//-----------------------------------------------------------------------------------------
