@@ -41,10 +41,20 @@ class Produto {
       );
     }
   }
+
+  // [M2S04] Ex 6 - Criando método Repor
+  Repor(quantidadeReposta) {
+    this.quantidade += quantidadeReposta;
+    console.log(`Quantidade reposta de ${this.nome}: ${quantidadeReposta}`);
+  }
 }
 
+// Chamando o método Vender
 const bermuda = new Produto("Bermuda", 59.9, 20);
 bermuda.Vender(5);
 console.log(`Estoque atual de ${bermuda.quantidade} bermudas.`);
 bermuda.Vender(20);
+// Chamando o método Repor
+bermuda.Repor(10);
+console.log(`Estoque atual de ${bermuda.quantidade} bermudas.`);
 //-----------------------------------------------------------------------------------------
