@@ -29,4 +29,22 @@ class Produto {
     this.preco = preco;
     this.quantidade = quantidade;
   }
+
+  // [M2S04] Ex 5 - Criando método Vender
+  Vender(quantidadeVendida) {
+    if (quantidadeVendida > this.quantidade) {
+      console.log("Estoque insuficiente.");
+    } else {
+      this.quantidade -= quantidadeVendida;
+      console.log(
+        `Venda de ${quantidadeVendida} unidades de ${this.nome} realizada.`
+      );
+    }
+  }
 }
+
+const bermuda = new Produto("Bermuda", 59.9, 20);
+bermuda.Vender(5);
+console.log(`Estoque atual de ${bermuda.quantidade} bermudas.`);
+bermuda.Vender(20);
+//-----------------------------------------------------------------------------------------
