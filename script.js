@@ -15,3 +15,10 @@ const pares = numeros.filter((n) => {
 
 console.log(pares);
 //-----------------------------------------------------------------------------------------
+//[M2S04] Ex 3 - Mapeamento de Elementos
+const quadrados = numeros.map((n) => {
+  return Math.pow(n, 2);
+});
+
+console.log(quadrados);
+//-----------------------------------------------------------------------------------------
