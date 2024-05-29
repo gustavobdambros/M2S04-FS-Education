@@ -54,6 +54,14 @@ class Produto {
       `O produto ${this.nome} possui ${this.quantidade} unidades disponíveis.`
     );
   }
+
+  // [M2S04] Ex 8 - Criando método AtualizarPreco
+  AtualizarPreco(novoValor) {
+    this.preco = novoValor;
+    console.log(
+      `Preço do produto ${this.nome} atualizado para R$${novoValor} com sucesso.`
+    );
+  }
 }
 
 // Chamando o método Vender
@@ -65,4 +73,6 @@ produto.Vender(20);
 produto.Repor(10);
 // Chamando o método MostrarEstoque
 produto.MostrarEstoque();
+//Atualizando o preço do produto
+produto.AtualizarPreco(99.9);
 //-----------------------------------------------------------------------------------------
