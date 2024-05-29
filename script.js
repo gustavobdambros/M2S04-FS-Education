@@ -47,14 +47,22 @@ class Produto {
     this.quantidade += quantidadeReposta;
     console.log(`Quantidade reposta de ${this.nome}: ${quantidadeReposta}`);
   }
+
+  // [M2S04] Ex 7 - Criando método MostrarEstoque
+  MostrarEstoque() {
+    console.log(
+      `O produto ${this.nome} possui ${this.quantidade} unidades disponíveis.`
+    );
+  }
 }
 
 // Chamando o método Vender
-const bermuda = new Produto("Bermuda", 59.9, 20);
-bermuda.Vender(5);
-console.log(`Estoque atual de ${bermuda.quantidade} bermudas.`);
-bermuda.Vender(20);
+const produto = new Produto("Bermuda", 59.9, 20);
+produto.Vender(5);
+// Mostrando o saldo insuficiente após a venda
+produto.Vender(20);
 // Chamando o método Repor
-bermuda.Repor(10);
-console.log(`Estoque atual de ${bermuda.quantidade} bermudas.`);
+produto.Repor(10);
+// Chamando o método MostrarEstoque
+produto.MostrarEstoque();
 //-----------------------------------------------------------------------------------------
